@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e90e0e;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+        }
+
+        .profile-picture {
+            width: 110px; 
+            height: 110px;
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid #fff; /* White border around the profile picture */
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f8f8f8;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        nav ul li a:hover {
+            color: #e90e0e; /* Change color on hover */
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem auto; /* Center the section */
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            max-width: 800px; /* Limit the width */
+            opacity: 0; /* Start hidden for animation */
+            transform: translateY(20px); /* Start slightly lower for animation */
+            animation: fadeInUp 0.5s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1; /* Fully visible */
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and scale transition */
+        }
+
+        .download-button:hover {
+            background-color: #555; /* Darker shade on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./JM_photo.jpg" alt="Your Profile Picture" class="profile-picture">
+        <div class="header-content">
+           <h1>JUSTIN M</h1>
+           <p>Software developer</p>                                          
+       </div>
+   </header>
+
+   <nav>
+       <ul>
+           <li><a href="#about">About</a></li>
+           <li><a href="#education">Education</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#Certificates">Certificates</a></li>
+           <li><a href="#Contact">Contact</a></li>
+           <li><a href="#resume">Resume</a></li>
+       </ul>
+   </nav>
+
+   <section id="about">
+       <div class="section-content">
+           <h2>About Me</h2>
+           <p>As I complete my college studies, I am proud of the diverse skill set I have built, including expertise in<b> Python, Java, C++, Data Structures, HTML, CSS, and JavaScript.</b> Throughout my academic journey, I have developed a strong foundation in programming, learning to write efficient code and solve complex problems. Python and Java have helped me strengthen my programming logic, while C++ has deepened my understanding of system-level programming. With Data Structures, I have gained the ability to organize and manage data efficiently, and my experience in Web Development has allowed me to create interactive and responsive websites. JavaScript has further enhanced my front-end development skills, making me confident in building dynamic web applications. As I am move forward, I  excited to apply these skills to real-world projects and continue evolving as a developer.</p>
+       </div>
+   </section>
+
+   <section id="education">
+       <div class="section-content">
+           <h2>Education</h2>
+           <p>BCA - Bachelor In Computer Application</p>
+       </div>
+   </section>
+
+   <section id="skills">
+       <div class="section-content">
+           <h2>Skills</h2>
+           <ul>
+               <li>Python</li>
+               <li>Data Structures</li>
+               <li>Html</li>
+               <li>Java</li>
+               <li>C++</li>
+               <li>JavaScript</li>
+           </ul>
+       </div>
+   </section>
+
+   <section id="Certificates">
+       <div class="section-content">
+           <h2>Certificates</h2>
+           <ul>
+               <li>Mango DB</li>
+               <li>Mathworks</li>
+               <li>Infosys</li> 
+           </ul>
+       </div>
+   </section>
+
+   <section id="Contact">
+       <div class="section-content">
+           <h2>Contact</h2>
+           <ul>
+               <li>Phone Number: +91-8807555891 </li>
+               <li><a href="#">Mail ID :23h339@amjaincollege.edu.in</a></li>
+               <li>Address : No : 6/9 Nehru street,Sriperumbudur ,Chenna</li> 
+           </ul>
+       </div>
+   </section>
+
+   <section id="resume">
+       <div class="section-content">
+           <center>
+               <h2>Resume</h2>
+               <a href="./Justin_M_Resume.pdf" target="_blank" class="download-button">Download CV</a>
+           </center>
+       </div>  
+   </section>
+
+   <footer>
+       <p>&copy; 2025 JUSTIN M</p>
+   </footer>
+
+   <!-- Smooth scrolling script -->
+   <script>
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function(e) {
+               e.preventDefault();
+               const targetId = this.getAttribute('href').substring(1);
+               const targetElement = document.getElementById(targetId);
+               if (targetElement) {
+                   window.scrollTo({
+                       top: targetElement.offsetTop,
+                       behavior: 'smooth'
+                   });
+               }
+           });
+       });
+   </script>
+
+</body>
+</html>
